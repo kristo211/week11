@@ -13,7 +13,7 @@ app.get('/search', (req, res) => {
 app.post('/search', (req, res) => {
     let userMovieTitle = req.body.movieTitle;
 
-    console.log(userMovieTitle);
+    
 
    let movieUrl =`https://api.themoviedb.org/3/search/movie?query=${userMovieTitle}&api_key=9b99e7566ef8bfbd8352a3dd91f9ca26`;
    let genresUrl = 'https://api.themoviedb.org/3/genre/movie/list?api_key=9b99e7566ef8bfbd8352a3dd91f9ca26&language=en-US';
